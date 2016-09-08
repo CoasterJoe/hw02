@@ -101,20 +101,20 @@ function drawMap(){
 	var drawY=0;
 	var printStringLine= "";
 	for(drawX=0; drawX<width;drawX++){
-		printStringLine +="_";
+		printStringLine +="\t"+drawX;
 	}
 	console.log(printStringLine);
 
 	var printString="";
 	//Print out vertically
 	for(drawY=0; drawY<height; drawY++){
-		 printString="|";
+		 printString=""+drawY;
 		for(drawX=0; drawX<width; drawX++){
-			printString+=spots[drawX][drawY];
+			printString+="\t"+spots[drawX][drawY];
 		}
-		printString+="|";
+		//printString+="|";
 		console.log(printString);
 	}
 
-	console.log(printString);
+	//console.log(printString);
 }
